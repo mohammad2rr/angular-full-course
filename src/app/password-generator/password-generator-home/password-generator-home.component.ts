@@ -13,9 +13,33 @@ export class PasswordGeneratorHomeComponent {
   password: string = '';
   constructor() {}
 
+  onlengthChanged(value: any) {
+    if (!isNaN(value)) {
+      this.length = parseInt(value);
+    }
+  }
+
   onPassGeneratorBtnClicked() {
     const numbers = '0123456789';
     const letters = 'zxcvbnmasdfghjklqwertyuiop';
     const symbols = '!@#$%^&*()_+|';
+    let validCharacter = '';
+    let generatedPassword = '';
+
+    if (this.isNumbersIncluded) {
+      validCharacter += numbers;
+    }
+    if (this.isSymbolsIncluded) {
+      validCharacter += symbols;
+    }
+    if (this.islettersIncluded) {
+      validCharacter += letters;
+    }
+
+    for (let i = 0; i < this.length; i++) {
+      let index = Math.floor(Math.random() * validCharacter.length);
+      generatedPassword += validCharacter[index];
+    }
+    this.password = generatedPassword;
   }
 }
