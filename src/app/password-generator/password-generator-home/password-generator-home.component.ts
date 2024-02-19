@@ -19,6 +19,16 @@ export class PasswordGeneratorHomeComponent {
     }
   }
 
+  onletterIncludedChange() {
+    this.islettersIncluded = !this.islettersIncluded;
+  }
+
+  onSymbolIncludedChange() {
+    this.isSymbolsIncluded = !this.isSymbolsIncluded;
+  }
+  onNumberIncludedChange() {
+    this.isNumbersIncluded = !this.isNumbersIncluded;
+  }
   onPassGeneratorBtnClicked() {
     const numbers = '0123456789';
     const letters = 'zxcvbnmasdfghjklqwertyuiop';
