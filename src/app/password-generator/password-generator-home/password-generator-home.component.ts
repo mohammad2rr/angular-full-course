@@ -31,7 +31,7 @@ export class PasswordGeneratorHomeComponent {
   }
   onPassGeneratorBtnClicked() {
     const numbers = '0123456789';
-    const letters = 'zxcvbnmasdfghjklqwertyuiop';
+    const letters = 'zxcvbnmasdfghjklqwertyuiopASDFGHJKLZXCVBNMQWERTYUIOP';
     const symbols = '!@#$%^&*()_+|';
     let validCharacter = '';
     let generatedPassword = '';
