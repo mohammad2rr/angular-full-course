@@ -6,19 +6,20 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+    loadChildren: () =>
+      import('./home-module/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'password-generator',
     loadChildren: () =>
-      import('./password-generator/password-generator.module').then(
+      import('./password-generator-module/password-generator.module').then(
         (m) => m.PasswordGeneratorModule
       ),
   },
   {
     path: 'card-project',
     loadChildren: () =>
-      import('./card-project/card-project.module').then(
+      import('./card-project-module/card-project.module').then(
         (m) => m.CardProjectModule
       ),
   },
