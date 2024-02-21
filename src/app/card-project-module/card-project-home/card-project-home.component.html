@@ -1,1 +1,10 @@
-<app-custom-card></app-custom-card>
+<div class="columns">
+  <div *ngFor="let item of customCardData" class="column is-one-third">
+    <app-custom-card
+      [title]="item.title"
+      [userName]="item.userName"
+      [imageUrl]="item.imageUrl"
+      [content]="item.content"
+    ></app-custom-card>
+  </div>
+</div>
