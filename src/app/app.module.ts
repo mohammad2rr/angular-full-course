@@ -16,7 +16,6 @@ import { SharedModuleModule } from './shared-module/shared-module.module';
     PasswordGeneratorModule,
     CardProjectModule,
     HomeModule,
-    SharedModuleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
