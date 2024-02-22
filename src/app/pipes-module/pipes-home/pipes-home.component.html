@@ -35,4 +35,26 @@
       dateType : {{ dateInput | date : "longDate" }}
     </div>
   </div>
+
+  <div class="column has-background-grey mx-3">
+    <label class="has-text-white" for="">Amount: </label>
+    <input
+      class="input"
+      type="text"
+      name=""
+      id=""
+      (input)="onAmountChange($any($event.target).value)"
+    />
+    <div class="mx-2 has-text-white">
+      currency : {{ amountInput | currency }}
+    </div>
+    <div class="mx-2 has-text-white">
+      currency : {{ amountInput | currency : "CAD" : "symbol" : "3.1-2" }}
+      <!-- tip  قبل از اعشار سه رقم باشد   -->
+      <!-- tip  واجب است یک رقم اعشار بدهید و تا دو رقم اعشار قابل قبول هست  -->
+    </div>
+    <div class="mx-2 has-text-white">
+      currency : {{ amountInput | currency : "JPY" }}
+    </div>
+  </div>
 </div>
