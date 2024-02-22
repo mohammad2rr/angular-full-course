@@ -8,7 +8,16 @@
       id=""
       (input)="onNameChange($any($event.target).value)"
     />
-    <span class="mx-2 has-text-white">{{ nameInput }}</span>
+    <div class="mx-2 has-text-white">
+      titlecase : {{ nameInput | titlecase }}
+    </div>
+    <div class="mx-2 has-text-white">
+      uppercase : {{ nameInput | uppercase }}
+    </div>
+    <div class="mx-2 has-text-white">
+      lowecase : {{ nameInput | lowercase }}
+    </div>
   </div>
+
   <div class="column"></div>
 </div>
