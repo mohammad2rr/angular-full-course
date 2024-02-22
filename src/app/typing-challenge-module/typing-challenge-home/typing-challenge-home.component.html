@@ -12,7 +12,7 @@
           (input)="onChangeTypingInput($any($event.target).value)"
         />
       </div>
-      <div *ngIf="result" class="box has-text-centered">
+      <div *ngIf="inputText === randomText" class="box has-text-centered">
         <h1 class="title">success</h1>
       </div>
     </div>
