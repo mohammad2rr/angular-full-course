@@ -14,4 +14,11 @@ export class TypingChallengeHomeComponent {
     console.log(text, 'text');
     this.inputText = text;
   }
+
+  compare(charRandom: string, charInputText: string): string {
+    if (!charInputText) {
+      return 'pending';
+    }
+    return charInputText === charRandom ? 'correct' : 'incorrect';
+  }
 }
