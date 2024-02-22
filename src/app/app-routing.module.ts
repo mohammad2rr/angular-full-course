@@ -23,6 +23,13 @@ const routes: Routes = [
         (m) => m.CardProjectModule
       ),
   },
+  {
+    path: 'typing-challenge',
+    loadChildren: () =>
+      import('./typing-challenge-module/typing-challenge-module.module').then(
+        (m) => m.TypingChallengeModuleModule
+      ),
+  },
 ];
 
 @NgModule({
