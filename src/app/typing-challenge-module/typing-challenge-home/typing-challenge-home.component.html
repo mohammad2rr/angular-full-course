@@ -5,7 +5,12 @@
       <p class="has-text-centered has-text-black">{{ randomText }}</p>
       <div class="field">
         <label for="inputText"></label>
-        <input id="inputText" type="text" class="input" />
+        <input
+          id="inputText"
+          type="text"
+          class="input"
+          (input)="onChangeTypingInput($any($event.target).value)"
+        />
       </div>
       <div class="box has-text-centered">
         <h1 class="title">success</h1>

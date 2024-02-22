@@ -8,4 +8,8 @@ import { faker } from '@faker-js/faker';
 })
 export class TypingChallengeHomeComponent {
   randomText: string = faker.lorem.sentence();
+
+  onChangeTypingInput(text: string) {
+    console.log(text, 'text');
+  }
 }
