@@ -1,1 +1,14 @@
-<p>pipes-home works!</p>
+<div class="columns">
+  <div class="column has-background-grey">
+    <label class="has-text-white" for="">Receiver Name: </label>
+    <input
+      class="input"
+      type="text"
+      name=""
+      id=""
+      (input)="onNameChange($any($event.target).value)"
+    />
+    <span class="mx-2 has-text-white">{{ nameInput }}</span>
+  </div>
+  <div class="column"></div>
+</div>
