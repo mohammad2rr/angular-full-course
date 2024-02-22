@@ -11,6 +11,6 @@
   box-sizing: border-box;
 }
 .box {
-  background-color: #e8e3e3;
+  background-color: hsl(0, 0%, 86%);
   color: aliceblue;
 }
