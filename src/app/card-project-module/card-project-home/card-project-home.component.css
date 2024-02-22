@@ -1,0 +1,7 @@
+:host {
+  background-color: #f2d936 !important;
+  display: block;
+  padding: 15px;
+  border-radius: 5px;
+}
+/*:host{} selector is for the component*/
