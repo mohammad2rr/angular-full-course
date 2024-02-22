@@ -9,6 +9,13 @@ export class PipesHomeComponent {
   nameInput: string = '';
   dateInput: string = '';
   amountInput: string = '';
+  heightInput: number = 0;
+  car = {
+    model: 'BMW',
+    year: 2019,
+    type: 's500',
+    color: 'blue',
+  };
 
   onNameChange(val: string) {
     this.nameInput = val;
@@ -20,5 +27,9 @@ export class PipesHomeComponent {
 
   onAmountChange(val: string) {
     this.amountInput = val;
+  }
+
+  onHeightChange(val: number) {
+    this.heightInput = val;
   }
 }

@@ -1,4 +1,4 @@
-<div class="columns">
+<div class="columns my-2">
   <div class="column has-background-grey mx-3">
     <label class="has-text-white" for="">Receiver Name: </label>
     <input
@@ -50,11 +50,32 @@
     </div>
     <div class="mx-2 has-text-white">
       currency : {{ amountInput | currency : "CAD" : "symbol" : "3.1-2" }}
-      <!-- tip  قبل از اعشار سه رقم باشد   -->
+      <!-- tip  قبل از اعشار سه رقم باشد  حداقل  -->
       <!-- tip  واجب است یک رقم اعشار بدهید و تا دو رقم اعشار قابل قبول هست  -->
     </div>
     <div class="mx-2 has-text-white">
       currency : {{ amountInput | currency : "JPY" }}
     </div>
   </div>
+</div>
+<div class="columns my-2">
+  <div class="column has-background-grey mx-3">
+    <label class="has-text-white" for="">Height: </label>
+    <input
+      class="input"
+      type="text"
+      name=""
+      id=""
+      (input)="onHeightChange($any($event.target).value)"
+    />
+    <div class="mx-2 has-text-white">
+      decimal : {{ heightInput | number : "3.2-4" }}
+    </div>
+  </div>
+  <div class="column has-background-grey mx-3">
+    <div class="column has-background-grey mx-3">
+      <div class="mx-2 has-text-white">json : {{ car | json }}</div>
+    </div>
+  </div>
+  <div class="column has-background-grey mx-3"></div>
 </div>
