@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class PipesHomeComponent {
   nameInput: string = '';
+  dateInput: string = '';
+
   onNameChange(val: string) {
-    console.log(val);
     this.nameInput = val;
+  }
+
+  onDateChange(val: string) {
+    this.dateInput = val;
   }
 }

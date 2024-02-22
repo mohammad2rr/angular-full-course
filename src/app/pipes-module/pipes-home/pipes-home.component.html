@@ -1,5 +1,5 @@
 <div class="columns">
-  <div class="column has-background-grey">
+  <div class="column has-background-grey mx-3">
     <label class="has-text-white" for="">Receiver Name: </label>
     <input
       class="input"
@@ -19,5 +19,20 @@
     </div>
   </div>
 
-  <div class="column"></div>
+  <div class="column has-background-grey mx-3">
+    <label class="has-text-white" for="">Payment Date: </label>
+    <input
+      class="input"
+      type="date"
+      name=""
+      id=""
+      (input)="onDateChange($any($event.target).value)"
+    />
+    <div class="mx-2 has-text-white">
+      dateType : {{ dateInput | date : "MMMM d y" }}
+    </div>
+    <div class="mx-2 has-text-white">
+      dateType : {{ dateInput | date : "longDate" }}
+    </div>
+  </div>
 </div>
