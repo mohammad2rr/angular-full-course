@@ -2,7 +2,11 @@
   <div class="columns is-centered">
     <div class="box column is-one-third">
       <h1 class="title has-text-centered">Typing challenge</h1>
-      <p class="has-text-centered has-text-black">{{ randomText }}</p>
+      <p class="has-text-centered has-text-black">
+        <span *ngFor="let char of randomText.split(''); let i = index"
+          >({{ char }}{{ inputText[i] }})</span
+        >
+      </p>
       <div class="field">
         <label for="inputText"></label>
         <input
