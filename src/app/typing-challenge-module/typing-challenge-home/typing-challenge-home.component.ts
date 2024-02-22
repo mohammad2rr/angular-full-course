@@ -8,8 +8,14 @@ import { faker } from '@faker-js/faker';
 })
 export class TypingChallengeHomeComponent {
   randomText: string = faker.lorem.sentence();
+  result: boolean = false;
 
   onChangeTypingInput(text: string) {
     console.log(text, 'text');
+    if (text == this.randomText) {
+      this.result = true;
+    } else {
+      this.result = false;
+    }
   }
 }
