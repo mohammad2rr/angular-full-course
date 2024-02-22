@@ -30,6 +30,13 @@ const routes: Routes = [
         (m) => m.TypingChallengeModuleModule
       ),
   },
+  {
+    path: 'pipes',
+    loadChildren: () =>
+      import('./pipes-module/pipes-module.module').then(
+        (m) => m.PipesModuleModule
+      ),
+  },
 ];
 
 @NgModule({
