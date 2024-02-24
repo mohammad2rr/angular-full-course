@@ -37,6 +37,13 @@ const routes: Routes = [
         (m) => m.PipesModuleModule
       ),
   },
+  {
+    path: 'directives',
+    loadChildren: () =>
+      import('./directives-module/directives-module.module').then(
+        (m) => m.DirectivesModuleModule
+      ),
+  },
 ];
 
 @NgModule({
