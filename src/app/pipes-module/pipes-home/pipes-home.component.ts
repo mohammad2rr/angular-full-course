@@ -10,6 +10,7 @@ export class PipesHomeComponent {
   dateInput: string = '';
   amountInput: string = '';
   heightInput: number = 0;
+  mileInput: number = 0;
   car = {
     model: 'BMW',
     year: 2019,
@@ -31,5 +32,9 @@ export class PipesHomeComponent {
 
   onHeightChange(val: number) {
     this.heightInput = val;
+  }
+
+  onMileChange(val: number) {
+    this.mileInput = val;
   }
 }
