@@ -92,6 +92,13 @@
       </div>
       <!-- ?? with arguments -->
       <div class="mx-2 has-text-white">m : {{ mileInput | convert : "m" }}</div>
+
+      <div
+        *ngIf="(mileInput | convert : 'km') > 10"
+        class="mx-2 has-text-white"
+      >
+        m : {{ mileInput | convert : "km" }}
+      </div>
     </div>
   </div>
 </div>
