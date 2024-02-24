@@ -87,7 +87,11 @@
         id=""
         (input)="onMileChange($any($event.target).value)"
       />
-      <div class="mx-2 has-text-white">km : {{ mileInput | convert }}</div>
+      <div class="mx-2 has-text-white">
+        km : {{ mileInput | convert : "km" }}
+      </div>
+      <!-- ?? with arguments -->
+      <div class="mx-2 has-text-white">m : {{ mileInput | convert : "m" }}</div>
     </div>
   </div>
 </div>
