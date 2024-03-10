@@ -1,1 +1,17 @@
-<p>directives-home works!</p>
+<nav class="pagination" role="navigation" aria-label="pagination">
+  <a class="pagination-previous is-disabled" title="This is the first page"
+    >Previous</a
+  >
+  <a class="pagination-next">Next page</a>
+  <ul class="pagination-list">
+    <li *ngFor="let item of images; let i = index">
+      <a
+        class="pagination-link"
+        [ngClass]="setIsCurrentClass(i)"
+        aria-label="Page 1"
+        aria-current="page"
+        >{{ i + 1 }}</a
+      >
+    </li>
+  </ul>
+</nav>

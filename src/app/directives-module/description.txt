@@ -1,0 +1,4 @@
+دایرکتیو ها، اچ تی ام ال ها  را میتوانند روی آن ها تاثیر بگذارند.
+structural directive *to remove or add dom elements
+
+attribute directive   to modified dom elements
