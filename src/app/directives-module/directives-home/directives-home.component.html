@@ -1,24 +1,50 @@
-<nav class="pagination" role="navigation" aria-label="pagination">
-  <a
-    class="pagination-previous"
-    title="This is the first page"
-    [ngClass]="{ 'is-disabled': currentPage === 0 }"
-    >Previous</a
-  >
-  <a
-    class="pagination-next"
-    [ngClass]="{ 'is-disabled': currentPage === images.length - 1 }"
-    >Next page</a
-  >
-  <ul class="pagination-list">
-    <li *ngFor="let item of images; let i = index">
+<div>
+  <div class="box">
+    <h2 class="notification is-warning">{{ images[currentPage].title }}</h2>
+    <div class="box has-background-grey">
+      <img
+        [src]="images[currentPage].url"
+        alt=""
+        style="width: 300px; height: 300px"
+      />
+    </div>
+    <!--nav-->
+    <nav
+      class="pagination has-background-white p-2"
+      role="navigation"
+      aria-label="pagination"
+    >
       <a
-        class="pagination-link"
-        [ngClass]="setIsCurrentClass(i)"
-        aria-label="Page 1"
-        aria-current="page"
-        >{{ i + 1 }}</a
+        class="pagination-previous"
+        title="This is the first page"
+        [ngClass]="{
+          'is-disabled': currentPage === 0,
+          'pointer-event-none': currentPage === 0
+        }"
+        (click)="currentPage = currentPage - 1"
+        >Previous</a
       >
-    </li>
-  </ul>
-</nav>
+      <a
+        class="pagination-next"
+        [ngClass]="{
+          'is-disabled': currentPage === images.length - 1,
+          'pointer-event-none': currentPage === images.length - 1
+        }"
+        (click)="currentPage = currentPage + 1"
+        >Next page</a
+      >
+      <ul class="pagination-list">
+        <li *ngFor="let item of images; let i = index">
+          <a
+            class="pagination-link"
+            [ngClass]="setIsCurrentClass(i)"
+            aria-label="Page 1"
+            aria-current="page"
+            (click)="currentPage = i"
+            >{{ i + 1 }}</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
