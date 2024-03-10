@@ -1,8 +1,15 @@
 <nav class="pagination" role="navigation" aria-label="pagination">
-  <a class="pagination-previous is-disabled" title="This is the first page"
+  <a
+    class="pagination-previous"
+    title="This is the first page"
+    [ngClass]="{ 'is-disabled': currentPage === 0 }"
     >Previous</a
   >
-  <a class="pagination-next">Next page</a>
+  <a
+    class="pagination-next"
+    [ngClass]="{ 'is-disabled': currentPage === images.length - 1 }"
+    >Next page</a
+  >
   <ul class="pagination-list">
     <li *ngFor="let item of images; let i = index">
       <a
