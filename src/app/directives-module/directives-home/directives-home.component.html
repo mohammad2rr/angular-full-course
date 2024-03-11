@@ -34,16 +34,18 @@
         >Next page</a
       >
       <ul class="pagination-list">
-        <li *ngFor="let item of images; let i = index">
-          <a
-            class="pagination-link"
-            [ngClass]="setIsCurrentClass(i)"
-            aria-label="Page 1"
-            aria-current="page"
-            (click)="currentPage = i"
-            >{{ i + 1 }}</a
-          >
-        </li>
+        <ng-container *ngFor="let item of images; let i = index">
+          <li *ngIf="checkWindowIndex(i)">
+            <a
+              class="pagination-link"
+              [ngClass]="setIsCurrentClass(i)"
+              aria-label="Page 1"
+              aria-current="page"
+              (click)="currentPage = i"
+              >{{ i + 1 }}</a
+            >
+          </li>
+        </ng-container>
       </ul>
     </nav>
   </div>
