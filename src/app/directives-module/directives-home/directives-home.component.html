@@ -50,3 +50,14 @@
     </nav>
   </div>
 </div>
+<div class="box mt-5">
+  <button class="button my-2 is-success" (click)="ifEkseToggle()">
+    Button
+  </button>
+  <div class="notification has-background-grey">
+    <p *ngIf="isExist; else name">this is if</p>
+    <ng-template #name>
+      <p>this is else</p>
+    </ng-template>
+  </div>
+</div>

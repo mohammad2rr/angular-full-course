@@ -7,12 +7,16 @@ import { Component } from '@angular/core';
 })
 export class DirectivesHomeComponent {
   currentPage: number = 0;
+  isExist: boolean = true;
 
   setIsCurrentClass(index: number) {
     return index === this.currentPage ? 'is-current' : '';
   }
+  ifEkseToggle() {
+    this.isExist = !this.isExist;
+  }
 
-  checkWindowIndex(index: number) {
+  checkWindowIndex(index: number): boolean {
     console.log(this.currentPage, 'this.currentPage');
     console.log(index, 'index');
 
