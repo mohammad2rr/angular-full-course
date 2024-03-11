@@ -16,3 +16,7 @@
   -o-user-select: text;
   user-select: text;
 }
+.paginationImg {
+  width: 250px;
+  height: 250px;
+}
