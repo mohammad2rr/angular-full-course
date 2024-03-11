@@ -69,4 +69,6 @@ export class DirectivesHomeComponent {
       url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS2CY1ZFdT0qqocCha0b3t5pjTZVaXIzFPx3rTLMpv8n2H5VXbytJETcRTu3pnXqgtzSc&usqp=CAU',
     },
   ];
+
+  switchCaseData = [1, 2, 3, 8];
 }

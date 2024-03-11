@@ -50,14 +50,32 @@
     </nav>
   </div>
 </div>
-<div class="box mt-5">
-  <button class="button my-2 is-success" (click)="ifEkseToggle()">
-    Button
-  </button>
-  <div class="notification has-background-grey">
-    <p *ngIf="isExist; else name">this is if</p>
-    <ng-template #name>
-      <p>this is else</p>
-    </ng-template>
+<div class="columns">
+  <div class="column">
+    <div class="box mt-5">
+      <p class="has-text-dark">if else</p>
+      <button class="button my-2 is-success" (click)="ifEkseToggle()">
+        Button
+      </button>
+      <div class="notification has-background-grey">
+        <p *ngIf="isExist; else name">this is if</p>
+        <ng-template #name>
+          <p>this is else</p>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="box mt-5">
+      <p class="has-text-dark">switch case</p>
+      <ng-container *ngFor="let item of switchCaseData">
+        <ng-container [ngSwitch]="item">
+          <div class="has-text-dark" *ngSwitchCase="1">1</div>
+          <div class="has-text-dark" *ngSwitchCase="2">2</div>
+          <div class="has-text-dark" *ngSwitchCase="3">3</div>
+          <div class="has-text-dark" *ngSwitchDefault>default</div>
+        </ng-container>
+      </ng-container>
+    </div>
   </div>
 </div>
