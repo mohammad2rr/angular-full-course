@@ -5,7 +5,7 @@ import { ConvertPipe } from './custom-pipes/convert.pipe';
 import { ClassDirDirective } from './directives/class-dir.directive';
 import { ClassDir2Directive } from './directives/class-dir2.directive';
 import { CustomNgClassDirective } from './directives/custom-ng-class.directive';
-import { CustomStructuralDirDirective } from './directives/custom-structural-dir.directive';
+import { TimesDirective } from './directives/custom-times.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { CustomStructuralDirDirective } from './directives/custom-structural-dir
     ClassDirDirective,
     ClassDir2Directive,
     CustomNgClassDirective,
-    CustomStructuralDirDirective,
+    TimesDirective,
   ],
   imports: [CommonModule],
   exports: [
@@ -23,7 +23,7 @@ import { CustomStructuralDirDirective } from './directives/custom-structural-dir
     ClassDirDirective,
     ClassDir2Directive,
     CustomNgClassDirective,
-    CustomStructuralDirDirective,
+    TimesDirective,
   ],
 })
 export class SharedModuleModule {}
