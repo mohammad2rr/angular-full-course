@@ -17,8 +17,8 @@ export class DirectivesHomeComponent {
   }
 
   checkWindowIndex(index: number): boolean {
-    console.log(this.currentPage, 'this.currentPage');
-    console.log(index, 'index');
+    // console.log(this.currentPage, 'this.currentPage');
+    // console.log(index, 'index');
 
     return Math.abs(this.currentPage - index) < 2;
   }
