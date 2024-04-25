@@ -111,4 +111,17 @@
       </span>
     </div>
   </div>
+
+  <div class="column">
+    <div>
+      <p [ngStyle]="{ backgroundColor: true ? 'red' : 'blue' }">
+        lorem ipsum test
+      </p>
+    </div>
+    <div>
+      <p [ngStyle]="{ backgroundColor: false ? 'red' : 'blue' }">
+        lorem ipsum test
+      </p>
+    </div>
+  </div>
 </div>
