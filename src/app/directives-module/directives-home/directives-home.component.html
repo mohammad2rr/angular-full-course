@@ -105,8 +105,10 @@
     </ul>
   </div>
   <div class="column">
-    <ul>
-      <li>test1</li>
-    </ul>
+    <div>
+      <span *appCustomNgFor="images.length; let i = index; let color = color">
+        {{ color }}
+      </span>
+    </div>
   </div>
 </div>
