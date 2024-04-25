@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomCardComponent } from './custom-card/custom-card.component';
 import { ConvertPipe } from './custom-pipes/convert.pipe';
-import { ClassDirDirective } from './directives/class-dir.directive';
-import { ClassDir2Directive } from './directives/class-dir2.directive';
-import { CustomNgClassDirective } from './directives/custom-ng-class.directive';
-import { TimesDirective } from './directives/custom-times.directive';
-import { CustomNgForDirective } from './directives/custom-ng-for.directive';
+import { ClassDirDirective } from './custom-directives/class-dir.directive';
+import { ClassDir2Directive } from './custom-directives/class-dir2.directive';
+import { CustomNgClassDirective } from './custom-directives/custom-ng-class.directive';
+import { TimesDirective } from './custom-directives/custom-times.directive';
+import { CustomNgForDirective } from './custom-directives/custom-ng-for.directive';
 
 @NgModule({
   declarations: [
