@@ -4,6 +4,7 @@ import { CustomCardComponent } from './custom-card/custom-card.component';
 import { ConvertPipe } from './custom-pipes/convert.pipe';
 import { ClassDirDirective } from './directives/class-dir.directive';
 import { ClassDir2Directive } from './directives/class-dir2.directive';
+import { CustomNgClassDirective } from './directives/custom-ng-class.directive';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { ClassDir2Directive } from './directives/class-dir2.directive';
     ConvertPipe,
     ClassDirDirective,
     ClassDir2Directive,
+    CustomNgClassDirective,
   ],
   imports: [CommonModule],
   exports: [
@@ -18,6 +20,7 @@ import { ClassDir2Directive } from './directives/class-dir2.directive';
     ConvertPipe,
     ClassDirDirective,
     ClassDir2Directive,
+    CustomNgClassDirective,
   ],
 })
 export class SharedModuleModule {}

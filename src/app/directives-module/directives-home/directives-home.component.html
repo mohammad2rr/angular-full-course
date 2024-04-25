@@ -88,5 +88,15 @@
   <div class="column">
     <!-- <p appClassDir2 [backgroundColor]="'yellow'">lorem ipsum p2</p> -->
     <p [appClassDir2]="'yellow'">lorem ipsum p2</p>
+    <p [appCustomNgClass]="{ hasCustomClass: hasCustomClass }">
+      lorem ipsum p3
+    </p>
+    <button
+      class="button my-2 is-success"
+      type="button"
+      (click)="hasCustomClassToggler()"
+    >
+      CustomClassToggler
+    </button>
   </div>
 </div>

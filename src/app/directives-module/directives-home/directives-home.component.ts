@@ -8,7 +8,11 @@ import { Component } from '@angular/core';
 export class DirectivesHomeComponent {
   currentPage: number = 0;
   isExist: boolean = true;
+  hasCustomClass: boolean = false;
 
+  hasCustomClassToggler() {
+    this.hasCustomClass = !this.hasCustomClass;
+  }
   setIsCurrentClass(index: number) {
     return index === this.currentPage ? 'is-current' : '';
   }
