@@ -7,6 +7,7 @@ import { ClassDir2Directive } from './custom-directives/class-dir2.directive';
 import { CustomNgClassDirective } from './custom-directives/custom-ng-class.directive';
 import { TimesDirective } from './custom-directives/custom-times.directive';
 import { CustomNgForDirective } from './custom-directives/custom-ng-for.directive';
+import { CustomNgStyleDirective } from './custom-directives/custom-ng-style.directive';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CustomNgForDirective } from './custom-directives/custom-ng-for.directiv
     CustomNgClassDirective,
     TimesDirective,
     CustomNgForDirective,
+    CustomNgStyleDirective,
   ],
   imports: [CommonModule],
   exports: [
@@ -27,6 +29,7 @@ import { CustomNgForDirective } from './custom-directives/custom-ng-for.directiv
     CustomNgClassDirective,
     TimesDirective,
     CustomNgForDirective,
+    CustomNgStyleDirective,
   ],
 })
 export class SharedModuleModule {}
