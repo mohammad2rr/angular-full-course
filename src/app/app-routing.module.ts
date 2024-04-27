@@ -44,6 +44,13 @@ const routes: Routes = [
         (m) => m.DirectivesModuleModule
       ),
   },
+  {
+    path: 'semantic',
+    loadChildren: () =>
+      import('./semantic-ui-module/semantic-ui-module.module').then(
+        (m) => m.SemanticUiModuleModule
+      ),
+  },
 ];
 
 @NgModule({
