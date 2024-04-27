@@ -7,9 +7,10 @@ import { PasswordGeneratorModule } from './password-generator-module/password-ge
 import { CardProjectModule } from './card-project-module/card-project.module';
 import { HomeModule } from './home-module/home.module';
 import { SharedModuleModule } from './shared-module/shared-module.module';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
