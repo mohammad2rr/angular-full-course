@@ -23,7 +23,6 @@ const routes: Routes = [
           import('./views/views.module').then((m) => m.ViewsModule),
       },
       {
-        //localhost:4200/collections
         path: 'collections',
         loadChildren: () =>
           import('./collections/collections.module').then(
