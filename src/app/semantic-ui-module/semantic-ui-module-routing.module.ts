@@ -6,28 +6,31 @@ const routes: Routes = [
   {
     path: '',
     component: SemanticUiHomeComponent,
-  },
-  {
-    path: 'mods',
-    loadChildren: () => import('./mods/mods.module').then((m) => m.ModsModule),
-  },
-  {
-    path: 'elements',
-    loadChildren: () =>
-      import('./elements/elements.module').then((m) => m.ElementsModule),
-  },
-  {
-    path: 'views',
-    loadChildren: () =>
-      import('./views/views.module').then((m) => m.ViewsModule),
-  },
-  {
-    //localhost:4200/collections
-    path: 'collections',
-    loadChildren: () =>
-      import('./collections/collections.module').then(
-        (m) => m.CollectionsModule
-      ),
+    children: [
+      {
+        path: 'mods',
+        loadChildren: () =>
+          import('./mods/mods.module').then((m) => m.ModsModule),
+      },
+      {
+        path: 'elements',
+        loadChildren: () =>
+          import('./elements/elements.module').then((m) => m.ElementsModule),
+      },
+      {
+        path: 'views',
+        loadChildren: () =>
+          import('./views/views.module').then((m) => m.ViewsModule),
+      },
+      {
+        //localhost:4200/collections
+        path: 'collections',
+        loadChildren: () =>
+          import('./collections/collections.module').then(
+            (m) => m.CollectionsModule
+          ),
+      },
+    ],
   },
 ];
 

@@ -1,1 +1,19 @@
-<p>semantic-ui-home works!</p>
+<div class="ui pointing menu">
+  <a routerLinkActive="active" routerLink="elements" class="item">elements</a>
+  <a routerLinkActive="active" routerLink="views" class="item"> views </a>
+  <a routerLinkActive="active" routerLink="collections" class="item">
+    collections
+  </a>
+  <a routerLinkActive="active" routerLink="mods" class="item"> mods </a>
+  <div class="right menu">
+    <div class="item">
+      <div class="ui transparent icon input">
+        <input type="text" placeholder="Search..." />
+        <i class="search link icon"></i>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ui segment">
+  <router-outlet></router-outlet>
+</div>
