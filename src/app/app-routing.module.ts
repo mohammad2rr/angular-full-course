@@ -52,6 +52,13 @@ const routes: Routes = [
         (m) => m.SemanticUiModuleModule
       ),
   },
+  {
+    path: 'wiki',
+    loadChildren: () =>
+      import('./wiki-module/wiki-module.module').then(
+        (m) => m.WikiModuleModule
+      ),
+  },
   { path: 'not-found', component: NotFoundComponent },
   { path: '**', redirectTo: '/not-found' },
 ];
