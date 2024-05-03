@@ -14,3 +14,9 @@
   background-color: hsl(0, 0%, 86%);
   color: aliceblue;
 }
+body {
+  background-color: rgb(133, 182, 183);
+}
+.main-nav {
+  border-radius: 10px;
+}
