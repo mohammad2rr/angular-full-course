@@ -66,6 +66,13 @@ const routes: Routes = [
         (m) => m.ObservableModuleModule
       ),
   },
+  {
+    path: 'reactive-f',
+    loadChildren: () =>
+      import('./reactive-form-module/reactive-form-module.module').then(
+        (m) => m.ReactiveFormModuleModule
+      ),
+  },
   { path: 'not-found', component: NotFoundComponent },
   { path: '**', redirectTo: '/not-found' },
 ];
