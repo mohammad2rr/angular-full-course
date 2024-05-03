@@ -59,6 +59,13 @@ const routes: Routes = [
         (m) => m.WikiModuleModule
       ),
   },
+  {
+    path: 'obs',
+    loadChildren: () =>
+      import('./observable-module/observable-module.module').then(
+        (m) => m.ObservableModuleModule
+      ),
+  },
   { path: 'not-found', component: NotFoundComponent },
   { path: '**', redirectTo: '/not-found' },
 ];
