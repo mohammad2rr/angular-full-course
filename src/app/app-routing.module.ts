@@ -73,6 +73,13 @@ const routes: Routes = [
         (m) => m.ReactiveFormModuleModule
       ),
   },
+  {
+    path: 'template-f',
+    loadChildren: () =>
+      import('./template-form-module/template-form-module.module').then(
+        (m) => m.TemplateFormModuleModule
+      ),
+  },
   { path: 'not-found', component: NotFoundComponent },
   { path: '**', redirectTo: '/not-found' },
 ];
