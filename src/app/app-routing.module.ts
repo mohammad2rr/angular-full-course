@@ -80,6 +80,13 @@ const routes: Routes = [
         (m) => m.TemplateFormModuleModule
       ),
   },
+  {
+    path: 'custom-validation-reactive-f',
+    loadChildren: () =>
+      import('./custom-validation-module/custom-validation-module.module').then(
+        (m) => m.CustomValidationModuleModule
+      ),
+  },
   { path: 'not-found', component: NotFoundComponent },
   { path: '**', redirectTo: '/not-found' },
 ];
