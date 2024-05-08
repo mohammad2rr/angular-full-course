@@ -8,6 +8,7 @@ import { CustomNgClassDirective } from './custom-directives/custom-ng-class.dire
 import { TimesDirective } from './custom-directives/custom-times.directive';
 import { CustomNgForDirective } from './custom-directives/custom-ng-for.directive';
 import { CustomNgStyleDirective } from './custom-directives/custom-ng-style.directive';
+import { DividerComponent } from './divider/divider.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CustomNgStyleDirective } from './custom-directives/custom-ng-style.dire
     TimesDirective,
     CustomNgForDirective,
     CustomNgStyleDirective,
+    DividerComponent,
   ],
   imports: [CommonModule],
   exports: [
