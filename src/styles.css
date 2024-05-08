@@ -16,6 +16,8 @@
 }
 body {
   background-color: rgb(133, 182, 183);
+  background: url("./assets/images/e-mail.jpg") no-repeat center center;
+  background-size: cover;
 }
 .main-nav {
   border-radius: 10px;
