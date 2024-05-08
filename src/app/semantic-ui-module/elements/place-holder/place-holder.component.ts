@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-place-holder',
+  selector: 'app-palce-holder',
   templateUrl: './place-holder.component.html',
-  styleUrls: ['./place-holder.component.css']
+  styleUrls: ['./place-holder.component.css'],
 })
-export class PlaceHolderComponent {
+export class PalceHolderComponent implements OnInit {
+  @Input() lines = 4;
+  @Input() header = true;
 
+  constructor() {}
+
+  ngOnInit(): void {}
 }

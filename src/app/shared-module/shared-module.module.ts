@@ -9,6 +9,7 @@ import { TimesDirective } from './custom-directives/custom-times.directive';
 import { CustomNgForDirective } from './custom-directives/custom-ng-for.directive';
 import { CustomNgStyleDirective } from './custom-directives/custom-ng-style.directive';
 import { DividerComponent } from './divider/divider.component';
+import { RepeatTemplateDirective } from './custom-directives/repeat-template.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DividerComponent } from './divider/divider.component';
     CustomNgForDirective,
     CustomNgStyleDirective,
     DividerComponent,
+    RepeatTemplateDirective,
   ],
   imports: [CommonModule],
   exports: [
@@ -33,6 +35,7 @@ import { DividerComponent } from './divider/divider.component';
     CustomNgForDirective,
     CustomNgStyleDirective,
     DividerComponent,
+    RepeatTemplateDirective,
   ],
 })
 export class SharedModuleModule {}
