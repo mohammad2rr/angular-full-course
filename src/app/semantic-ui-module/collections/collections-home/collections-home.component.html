@@ -1,6 +1,10 @@
 <app-divider> Table Component </app-divider>
-<button (click)="changeFirstItem()">Change first Item</button>
-<button (click)="DestroyFirstItem()">destroy first Item</button>
+<button class="button is-warning m-2" (click)="changeFirstItem()">
+  Change first Item
+</button>
+<button class="button is-danger m-2" (click)="DestroyFirstItem()">
+  destroy first Item
+</button>
 <!-- <app-table
   *ngFor="let item of data"
   [data]="item"
