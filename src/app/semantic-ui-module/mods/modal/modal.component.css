@@ -1,0 +1,7 @@
+.ui.active.modal {
+  position: absolute !important;
+  top: 200px !important;
+  bottom: 200px !important;
+  left: 300px !important;
+  right: 200px !important;
+}
