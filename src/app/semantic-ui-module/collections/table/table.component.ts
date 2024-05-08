@@ -37,18 +37,18 @@ export class TableComponent implements OnInit, OnChanges {
     //console.log(this.data);
   }
   ngOnChanges(changes: SimpleChanges): void {
-    console.log('ngOnChanges');
-    console.log(changes);
-    console.log(this.data);
+    // console.log('ngOnChanges');
+    // console.log(changes);
+    // console.log(this.data);
   }
   ngOnInit(): void {
     //console.log('ngOnInit');
     //console.log(this.data);
   }
   ngOnDestroy(): void {
-    console.log('ngOnDestroy');
+    // console.log('ngOnDestroy');
   }
   ngDoCheck(): void {
-    console.log('ngOnDoChecked');
+    // console.log('ngOnDoChecked');
   }
 }
