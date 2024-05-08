@@ -32,6 +32,7 @@ import { DividerComponent } from './divider/divider.component';
     TimesDirective,
     CustomNgForDirective,
     CustomNgStyleDirective,
+    DividerComponent,
   ],
 })
 export class SharedModuleModule {}

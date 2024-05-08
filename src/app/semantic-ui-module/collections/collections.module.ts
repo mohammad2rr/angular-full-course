@@ -8,7 +8,7 @@ import { CompaniesComponent } from './companies/companies.component';
 import { PartnersComponent } from './partners/partners.component';
 import { TableComponent } from './table/table.component';
 import { TabsComponent } from './tabs/tabs.component';
-
+import { SharedModuleModule } from 'src/app/shared-module/shared-module.module';
 
 @NgModule({
   declarations: [
@@ -17,11 +17,8 @@ import { TabsComponent } from './tabs/tabs.component';
     CompaniesComponent,
     PartnersComponent,
     TableComponent,
-    TabsComponent
+    TabsComponent,
   ],
-  imports: [
-    CommonModule,
-    CollectionsRoutingModule
-  ]
+  imports: [CommonModule, CollectionsRoutingModule, SharedModuleModule],
 })
-export class CollectionsModule { }
+export class CollectionsModule {}
