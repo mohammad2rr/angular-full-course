@@ -87,6 +87,13 @@ const routes: Routes = [
         (m) => m.CustomValidationModuleModule
       ),
   },
+  {
+    path: 'email-app',
+    loadChildren: () =>
+      import('./email-module/email-module.module').then(
+        (m) => m.EmailModuleModule
+      ),
+  },
   { path: 'not-found', component: NotFoundComponent },
   { path: '**', redirectTo: '/not-found' },
 ];

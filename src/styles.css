@@ -22,3 +22,7 @@ body {
 .main-nav {
   border-radius: 10px;
 }
+.email-app-active {
+  color: black !important;
+  background-color: gold;
+}
