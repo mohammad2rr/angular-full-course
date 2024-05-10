@@ -94,6 +94,13 @@ const routes: Routes = [
         (m) => m.EmailModuleModule
       ),
   },
+  {
+    path: 'weather-app',
+    loadChildren: () =>
+      import('./weather-module/weather-module.module').then(
+        (m) => m.WeatherModuleModule
+      ),
+  },
   { path: 'not-found', component: NotFoundComponent },
   { path: '**', redirectTo: '/not-found' },
 ];
